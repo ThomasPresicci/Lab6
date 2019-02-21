@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.function.Consumer;
 
 /**
  * Abstract shape class to define a polygon.
@@ -32,6 +33,9 @@ public abstract class Polygon extends Shape
     @Override
 	public double getPerimeter()
     {
-    	// TODO: complete this...
+    	double perimeter = 0;
+    	for (double side : sideLengths)
+    		perimeter += side;
+    	return perimeter;
     }
 }
