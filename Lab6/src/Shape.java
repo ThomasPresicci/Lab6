@@ -129,6 +129,6 @@ public abstract class Shape implements Comparable<Shape>
 	@Override
 	public String toString()
 	{
-		// TODO: complete this...
+		return String.format("%s\t ID = %s\t area = %d\t perimeter = $d", getShapeType(), getId(), getArea(), getPerimeter());
 	}
 }
