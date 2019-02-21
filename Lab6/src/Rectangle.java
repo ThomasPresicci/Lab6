@@ -20,14 +20,12 @@ public class Rectangle extends Polygon {
 
 	@Override
 	public double getArea() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.width * this.height;
 	}
 
 	@Override
 	public String getShapeType() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Rectangle";
 	}
 
 }
