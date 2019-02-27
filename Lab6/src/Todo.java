@@ -19,9 +19,9 @@ Estimated Time (minutes):
 5. 15
 
 Actual Time (minutes):
-1. 
-2. 
-3. 
-4. 
-5. 
+1. 5
+2. 20
+3. 30
+4. 30
+5. 20
 */}
