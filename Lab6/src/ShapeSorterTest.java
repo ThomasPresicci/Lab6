@@ -48,11 +48,17 @@ public class ShapeSorterTest
 		Shape b = new EquilateralTriangle("test2", 4);
 		Shape c = new Square("test3", 3);
 		Shape d = new Circle("test4", 1.5);
+		Shape e = new Rectangle("test5", 2, 8);
+		Shape f = new Rectangle("test6", 1, 16);
+		Shape g = new Square("test7", 4);
 
 		sorter.addShape(a);
 		sorter.addShape(b);
 		sorter.addShape(c);
 		sorter.addShape(d);
+		sorter.addShape(e);
+		sorter.addShape(f);
+		sorter.addShape(g);
 
 		sorter.sortShapes();
 		
@@ -60,6 +66,9 @@ public class ShapeSorterTest
 		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(1), b);
 		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(2), a);
 		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(3), c);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(4), g);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(5), e);
+		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(6), f);
 	}
 
 	/**
@@ -113,7 +122,7 @@ public class ShapeSorterTest
 		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(2), b);
 		Assert.assertEquals("Shapes sorted incorrectly...", sorter.shapes.get(3), c);
 	}
-
+	
 	/**
 	 * Tests the toString.
 	 */
