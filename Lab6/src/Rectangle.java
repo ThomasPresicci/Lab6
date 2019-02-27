@@ -14,14 +14,6 @@ public class Rectangle extends Polygon {
 		this.width = width;
 	}
 
-	public double getHeight() {
-		return height;
-	}
-
-	public double getWidth() {
-		return width;
-	}
-
 	@Override
 	public double getArea() {
 		return this.width * this.height;
