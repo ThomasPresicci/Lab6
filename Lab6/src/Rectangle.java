@@ -6,6 +6,10 @@ public class Rectangle extends Polygon {
 	
 	public Rectangle(String id, double height, double width) {
 		super(id);
+		super.sideLengths.add(height);
+		super.sideLengths.add(height);
+		super.sideLengths.add(width);
+		super.sideLengths.add(width);
 		this.height = height;
 		this.width = width;
 	}
@@ -27,5 +31,4 @@ public class Rectangle extends Polygon {
 	public String getShapeType() {
 		return "Rectangle";
 	}
-
 }

@@ -28,6 +28,10 @@ public class Trapezoid extends Polygon
 	public Trapezoid(String id, double leftSide, double rightSide, double topBase, double bottomBase)
 	{
 		super(id);
+		super.sideLengths.add(leftSide);
+		super.sideLengths.add(rightSide);
+		super.sideLengths.add(topBase);
+		super.sideLengths.add(bottomBase);
 		this.leftSide = leftSide;
 		this.rightSide = rightSide;
 		this.topBase = topBase;
